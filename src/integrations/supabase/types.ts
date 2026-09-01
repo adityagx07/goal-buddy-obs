@@ -14,7 +14,63 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      goals: {
+        Row: {
+          background: string
+          bar_color: string
+          created_at: string
+          currency: string
+          current_amount: number
+          custom_image: string | null
+          edit_token: string
+          icon: string
+          id: string
+          name: string
+          size: string
+          slug: string
+          target_amount: number
+          text_color: string
+          theme: string
+          updated_at: string
+        }
+        Insert: {
+          background?: string
+          bar_color?: string
+          created_at?: string
+          currency?: string
+          current_amount?: number
+          custom_image?: string | null
+          edit_token: string
+          icon?: string
+          id?: string
+          name?: string
+          size?: string
+          slug: string
+          target_amount?: number
+          text_color?: string
+          theme?: string
+          updated_at?: string
+        }
+        Update: {
+          background?: string
+          bar_color?: string
+          created_at?: string
+          currency?: string
+          current_amount?: number
+          custom_image?: string | null
+          edit_token?: string
+          icon?: string
+          id?: string
+          name?: string
+          size?: string
+          slug?: string
+          target_amount?: number
+          text_color?: string
+          theme?: string
+          updated_at?: string
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
