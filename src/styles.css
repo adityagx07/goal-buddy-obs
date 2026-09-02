@@ -173,12 +173,25 @@
 }
 
 @utility label-mono {
+  display: block;
   font-family: var(--font-mono);
   font-size: 11px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: var(--inksoft);
 }
+
+@utility widget-gaming {
+  background-image:
+    var(--widget-glow),
+    linear-gradient(
+      to bottom,
+      color-mix(in oklab, var(--plum-2) 80%, transparent),
+      color-mix(in oklab, var(--velvet) 92%, transparent)
+    );
+  box-shadow: var(--shadow-widget);
+}
+
 
 @keyframes shimmer {
   0% {
