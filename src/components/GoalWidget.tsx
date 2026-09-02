@@ -2,9 +2,9 @@ import { ICONS, formatAmount, percentOf, type Goal } from "@/lib/goal";
 import { cn } from "@/lib/utils";
 
 const SIZES = {
-  sm: { wrap: "w-full max-w-[420px] p-4", icon: "size-9", title: "text-lg", meta: "text-[10px]", bar: "h-3" },
-  md: { wrap: "w-full max-w-[560px] p-6", icon: "size-12", title: "text-2xl", meta: "text-xs", bar: "h-4" },
-  lg: { wrap: "w-full max-w-[720px] p-8", icon: "size-16", title: "text-3xl", meta: "text-sm", bar: "h-5" },
+  sm: { wrap: "w-full max-w-[320px] p-4", icon: "size-9", title: "text-lg", meta: "text-[10px]", bar: "h-3" },
+  md: { wrap: "w-full max-w-[420px] p-6", icon: "size-12", title: "text-2xl", meta: "text-xs", bar: "h-4" },
+  lg: { wrap: "w-full max-w-[560px] p-8", icon: "size-16", title: "text-3xl", meta: "text-sm", bar: "h-5" },
 } as const;
 
 function surfaceClasses(goal: Goal) {
