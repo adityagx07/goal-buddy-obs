@@ -31,13 +31,12 @@ function surfaceClasses(goal: Goal) {
     case "gaming":
     default:
       return cn(
-        goal.background === "transparent"
-          ? "bg-gradient-to-b from-plum-2/80 to-velvet/90"
-          : base,
-        "rounded-2xl border border-border shadow-widget widget-glow",
+        goal.background === "transparent" ? "widget-gaming" : cn(base, "shadow-widget"),
+        "rounded-2xl border border-border",
       );
   }
 }
+
 
 export function GoalWidget({ goal, animate = true }: { goal: Goal; animate?: boolean }) {
   const pct = percentOf(goal);
